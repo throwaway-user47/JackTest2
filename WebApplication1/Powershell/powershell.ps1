@@ -1,5 +1,7 @@
 ﻿$filePath = "$PSScriptRoot\..\TextFile1.txt"
 Add-Content $filePath "Date: $(Get-Date -Format g)"
-git add .
+git status
+git add `.
+git status
 git commit -m "test"
 git push
