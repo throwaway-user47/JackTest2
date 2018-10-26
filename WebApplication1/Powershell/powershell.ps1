@@ -1,8 +1,5 @@
-﻿$PSScriptRoot
-
+﻿Set-Location $PSScriptRoot
 $filePath = "$PSScriptRoot\..\TextFile1.txt"
-$filePath
-
 Add-Content $filePath "Date: $(Get-Date -Format g)"
 git status
 git add `.
