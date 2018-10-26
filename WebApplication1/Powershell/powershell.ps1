@@ -1,5 +1,11 @@
 ﻿Set-Location $PSScriptRoot
+
 PowerShellGet\Install-Module posh-git -Scope CurrentUser
+
+Import-Module posh-git
+
+posh-git br
+
 $filePath = "$PSScriptRoot\..\TextFile1.txt"
 Add-Content $filePath "Date: $(Get-Date -Format g)"
 git status
